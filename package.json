@@ -1,0 +1,19 @@
+{
+  "name": "marketplace_backend",
+  "version": "1.0.0",
+  "description": "Marketplace for second-hand goods",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PradeepDevK/marketplace_backend.git"
+  },
+  "author": "PradeepRajK",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PradeepDevK/marketplace_backend/issues"
+  },
+  "homepage": "https://github.com/PradeepDevK/marketplace_backend#readme"
+}
