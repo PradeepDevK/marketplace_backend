@@ -1,6 +1,7 @@
 {
     "globals": {
-        "__dirname": true
+        "__dirname": true,
+        "process": true
     },
     "env": {
         "browser": true,
@@ -13,7 +14,7 @@
         "ecmaVersion": "latest"
     },
     "rules": {
-        "no-console": "warn",
+        "no-console": "off",
         //* Avoid Bugs
         "no-undef": "warn",
         "semi": "warn",
@@ -34,11 +35,12 @@
         "space-in-parens": "error",
         "space-infix-ops": "error",
         "space-unary-ops": "error",
-        "quotes": ["warn", "single"],
+        "quotes": ["error", "single", { "avoidEscape": true, "allowTemplateLiterals": true }],
+        "quote-props": ["error", "as-needed"],
         //
         "max-len": ["error", { "code": 300 }],
         "max-lines": ["error", { "max": 500 }],
-        "keyword-spacing": "error",
+        "keyword-spacing": ["error", { "before": true, "after": true }],
         "multiline-ternary": ["error", "never"],
         "no-mixed-operators": "error",
         //

@@ -12,6 +12,8 @@ const app = express();
 
 //routes
 const index = require('./routes/index');
+const { apiDictionary } = require('./routes/appData/dictionary');
+
 
 // Enable CORS
 app.use((req, res, next) => {
@@ -49,6 +51,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.use('/', index);
+app.use('/api/dictionary', apiDictionary);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
