@@ -16,6 +16,7 @@ const app = express();
 const index = require('./routes/index');
 const { apiDictionary } = require('./routes/appData/dictionary');
 const apiLogin = require('./routes/login');
+const apiUser = require('./routes/user');
 
 
 // Enable CORS
@@ -55,7 +56,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/api/dictionary', apiDictionary);
-app.use('/api/login/', apiLogin);
+app.use('/api/login', apiLogin);
+app.use('/api/user', apiUser);
 
 //Swagger
 swaggerDocs(app, configutationApp.PORT);

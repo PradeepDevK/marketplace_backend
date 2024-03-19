@@ -10,11 +10,11 @@ const router = require('express').Router();
 
 /**
  * @openapi
- * '/api/login/':
+ * '/api/user/register':
  *  post:
  *     tags:
- *     - Login
- *     summary: Login
+ *     - User
+ *     summary: Signup new user
  *     requestBody:
  *      required: true
  *      content:
@@ -28,9 +28,15 @@ const router = require('express').Router();
  *              password:
  *                type: string
  *                default: ''
+ *              email:
+ *                type: string
+ *                default: ''  
+ *              mobile:
+ *                type: string
+ *                default: '' 
  *     responses:
  *      200:
- *        description: Logged In Sucessfully
+ *        description: Created
  *      409:
  *        description: Conflict
  *      404:
@@ -38,7 +44,7 @@ const router = require('express').Router();
  *      500:
  *        description: Server Error
  */
-router.post('/', async (req, res, next) => {
+router.post('/register', async (req, res, next) => {
   try {
     res.status(200).send({ status: true, message: 'success'});
   } catch (e) {

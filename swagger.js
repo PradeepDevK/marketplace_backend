@@ -13,9 +13,9 @@ const options = {
       description:
         'API endpoints for a marketplace second-hand goods services documented on swagger',
       contact: {
-        name: 'Achilles',
-        email: 'info@achilles.com',
-        url: 'https://github.com/PradeepDevK/swagger_nodejs_expressjs',
+        name: 'Marketplace',
+        email: 'info@marketplace.com',
+        url: 'https://github.com/PradeepDevK/marketplace_backend.git',
       },
       version: '1.0.0',
     },
