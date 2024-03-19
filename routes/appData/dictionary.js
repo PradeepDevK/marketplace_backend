@@ -53,7 +53,7 @@ class dictionary {
  * '/api/dictionary':
  *  get:
  *     tags:
- *     - Dictionary Controller
+ *     - Dictionary
  *     summary: Get dictionary data
  *     responses:
  *      200:

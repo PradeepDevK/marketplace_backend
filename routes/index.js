@@ -1,3 +1,7 @@
+/* jshint node: true */
+/* jshint esnext: true */
+'use strict';
+
 const express = require('express');
 const router = express.Router();
 

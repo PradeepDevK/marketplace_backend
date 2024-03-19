@@ -9,9 +9,9 @@ const options = {
   definition: {
     openapi: '3.0.0',
     info: {
-      title: 'Mini Blog API',
+      title: 'Marketplace Second-Hand Goods API',
       description:
-        'API endpoints for a mini blog services documented on swagger',
+        'API endpoints for a marketplace second-hand goods services documented on swagger',
       contact: {
         name: 'Achilles',
         email: 'info@achilles.com',
