@@ -7,6 +7,8 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const logger = require('morgan');
 require('dotenv').config();
+const swaggerDocs = require('./swagger.js');
+const configutationApp = require('./config/app/config.js');
 
 const app = express();
 
@@ -52,6 +54,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/api/dictionary', apiDictionary);
+
+//Swagger
+swaggerDocs(app, configutationApp.PORT);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {

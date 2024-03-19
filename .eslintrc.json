@@ -1,7 +1,8 @@
 {
     "globals": {
         "__dirname": true,
-        "process": true
+        "process": true,
+        "require":  true
     },
     "env": {
         "browser": true,
@@ -11,7 +12,8 @@
     },
     "extends": "eslint:recommended",
     "parserOptions": {
-        "ecmaVersion": "latest"
+        "ecmaVersion": "latest",
+        "sourceType": "module"
     },
     "rules": {
         "no-console": "off",

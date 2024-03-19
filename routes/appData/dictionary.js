@@ -46,6 +46,25 @@ class dictionary {
   }
 }
 
+/** GET Methods */
+
+/**
+ * @openapi
+ * '/api/dictionary':
+ *  get:
+ *     tags:
+ *     - Dictionary Controller
+ *     summary: Get dictionary data
+ *     responses:
+ *      200:
+ *        description: Fetched Successfully
+ *      400:
+ *        description: Bad Request
+ *      404:
+ *        description: Not Found
+ *      500:
+ *        description: Server Error
+*/
 router.get('/', (req, res, next) => {
   res.status(200).send({ status: true, data: new dictionary().get(req.query.language) });
 });
