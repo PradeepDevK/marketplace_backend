@@ -27,6 +27,8 @@
   },
   "devDependencies": {
     "eslint": "^8.57.0",
-    "jslint": "^0.12.1"
+    "jslint": "^0.12.1",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.0"
   }
 }
