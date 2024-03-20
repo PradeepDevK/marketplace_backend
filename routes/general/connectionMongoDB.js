@@ -17,7 +17,7 @@ switch (true) {
   case IsProduction:
     break;
   default:
-    connectionString = `mongodb://localhost:27017/dbName`;
+    connectionString = `mongodb+srv://sysadmin:${dbPassword}@atlascluster.oma9w9g.mongodb.net/?retryWrites=true&w=majority&appName=AtlasCluster`;
 }
 
 console.log(`Proccess runing like Production: ${IsProduction}`);
