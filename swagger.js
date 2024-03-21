@@ -19,6 +19,21 @@ const options = {
       },
       version: '1.0.0',
     },
+    components: {
+      securitySchemes: {
+        bearerAuth: {
+          type: 'http',
+          in: 'header',
+          name: 'Authorization',
+          description: 'Bearer token to access these api endpoints',
+          scheme: 'bearer',
+          bearerFormat: 'JWT',
+        },
+      },
+    },
+    security: {
+      bearerAuth: [],
+    },
     servers: [
       {
         url: 'http://localhost:8000/',

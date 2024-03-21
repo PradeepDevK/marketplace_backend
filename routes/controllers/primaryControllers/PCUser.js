@@ -3,7 +3,7 @@
 'use strict';
 
 const { AxException, AxActionShowMessage, eDic, mongooseDB } = require('../../general/_general');
-const userSchema = require('../schemas/userSchema');
+const userSchema = require('../../schemas/userSchema');
 const PrimaryControllerBase = require('./PrimaryControllerBase');
 
 class PCUser extends PrimaryControllerBase {
